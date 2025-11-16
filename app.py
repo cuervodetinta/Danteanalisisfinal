@@ -20,7 +20,7 @@ st.markdown(
 st.markdown("<h1 class='center-text' style='color:#042927; font-weight:bold; font-style:italic;'>Análisis de datos de Sensores en Mi Ciudad</h1>", unsafe_allow_html=True)
 st.markdown("<h3 class='center-text'>Trabajo hecho por Dante Chona Cuervo</h3>", unsafe_allow_html=True)
 
-image = Image.open('grafana2.jpg')
+image = Image.open('grafana.png')
 st.image(image)
 
 uploaded_file = st.file_uploader('Choose a file')
@@ -60,4 +60,4 @@ if uploaded_file is not None:
     st.write(filtrado_df_max)
 
 else:
-    st.warning('Necesitas cargar un archivo csv excel.')
+    st.warning('¡Por favor cargar archivo csv excel!')
